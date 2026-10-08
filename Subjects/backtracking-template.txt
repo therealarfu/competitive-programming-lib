@@ -1,0 +1,24 @@
+def backtrack(params):
+    if base_case:
+        return append(copy_of_solution)
+        return
+    for choice in choices:
+        if violates_constraints:
+            continue
+        make_choice
+        backtrack(updated_params)
+        undo_choice
+
+void backtrack (estado_atual) {
+    if (é_solucao_completa(estado_atual)) {
+        return armazenar_solucao(estado_atual)        
+    }
+
+    for (cada_proxima_escolha) {
+        if (é_valida(proxima_escolha)) {
+            aplica_escolha(proxima_escolha)
+            backtrack(proxima_escolha)
+            desfaz_escolha(proxima_escolha)
+        }
+    }
+}
