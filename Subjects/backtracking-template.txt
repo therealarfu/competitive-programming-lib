@@ -1,7 +1,8 @@
 def backtrack(params):
     if base_case:
-        return append(copy_of_solution)
+        append(copy_of_solution)
         return
+
     for choice in choices:
         if violates_constraints:
             continue
@@ -9,7 +10,7 @@ def backtrack(params):
         backtrack(updated_params)
         undo_choice
 
-void backtrack (estado_atual) {
+void dfs (estado_atual) {
     if (é_solucao_completa(estado_atual)) {
         return armazenar_solucao(estado_atual)        
     }
@@ -22,3 +23,10 @@ void backtrack (estado_atual) {
         }
     }
 }
+
+É um DFS (Depth first search) -> "Como eu transverso essa tree" Sendo que em BT, a tree é invisivel. Vemos ela enquanto
+construimos
+
+Pergunte:
+"Quando eu tenho uma resposta completa?, quando eu devo parar de ir mais fundo e registro oque eu tenho?"
+"Que escolhas eu posso tomar a partir daqui?"
